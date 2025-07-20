@@ -1,0 +1,134 @@
+/* Base body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111827; /* Dark blue-gray */
+    color: #e5e5e5;
+}
+
+/* Header transition */
+header {
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Gradient text utility */
+.gradient-text {
+    background: linear-gradient(to right, #a78bfa, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Navigation link styles */
+.nav-link {
+    position: relative;
+    color: #d1d5db;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8b5cf6;
+    transition: width 0.3s ease;
+}
+.nav-link:hover {
+    color: white;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile navigation links */
+.mobile-nav-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #d1d5db;
+    transition: background-color 0.2s, color 0.2s;
+}
+.mobile-nav-link:hover {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+
+/* General button styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px; /* pill shape */
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button style */
+.btn-primary {
+    background-color: #8b5cf6;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #7c3aed;
+}
+
+/* Secondary button style */
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #8b5cf6;
+}
+.btn-secondary:hover {
+    background-color: #8b5cf6;
+}
+
+/* Section title style */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+/* Skill badge style */
+.skill-badge {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #a78bfa;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* Project card style */
+.project-card {
+    background-color: #1f2937; /* Slightly lighter dark gray */
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #374151;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Typewriter cursor */
+#typewriter::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: #8b5cf6; }
+}

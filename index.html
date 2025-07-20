@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhiman Mishra - Web Developer Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-3xl font-bold text-white">AM.</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/90 backdrop-blur-sm">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+            <!-- This now uses a solid, dark background color -->
+            <div class="absolute inset-0 z-0" style="background-color: #1a0b2e;"></div>
+            <div class="container mx-auto px-6 text-center z-10">
+                <img src="https://placehold.co/150x150/8a2be2/ffffff?text=AM" alt="Professional Photo" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-violet-500 shadow-lg">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Hi, I'm Abhiman Mishra.
+                    <span id="typewriter" class="gradient-text"></span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">A passionate Web Developer creating modern and responsive web applications. Explore my work and get in touch!</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#" class="btn btn-secondary">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Background & Experience</h3>
+                        <p class="text-gray-400 mb-4">I am a driven and enthusiastic developer, currently pursuing my B.Tech degree. My journey into code started with a fascination for how technology solves real-world problems. This has grown into a full-fledged passion for building elegant, efficient, and user-friendly digital experiences through my projects.</p>
+                        <p class="text-gray-400">I have hands-on experience with the MERN stack (MongoDB, Express, React, Node.js) and a strong foundation in HTML, CSS, and vanilla JavaScript.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Education & Skills</h3>
+                        <p class="text-gray-400 mb-6"><strong class="text-violet-400">B.Tech in Computer Science & Engineering</strong> - Manav Rachna International Institute of Research and Studies</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Tailwind CSS</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/3c1e5a/ffffff?text=Project+One" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-400 mb-4">A full-stack e-commerce site with product listings, a shopping cart, and user authentication.</p>
+                            <a href="#" class="text-violet-400 hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/3c1e5a/ffffff?text=Project+Two" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Task Management App</h3>
+                            <p class="text-gray-400 mb-4">A responsive task manager built with React and Firebase for real-time updates.</p>
+                            <a href="#" class="text-violet-400 hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/3c1e5a/ffffff?text=Project+Three" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Portfolio Website Template</h3>
+                            <p class="text-gray-400 mb-4">The very portfolio you are looking at! Built with Tailwind CSS and vanilla JS.</p>
+                            <a href="#" class="text-violet-400 hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8">I'm currently available for freelance work and open to discussing new projects. Feel free to reach out!</p>
+                <a href="mailto:contact@abhimanmishra.com" class="btn btn-primary text-lg">contact@abhimanmishra.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Abhiman Mishra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
